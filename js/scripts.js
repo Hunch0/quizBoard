@@ -15,18 +15,18 @@ function getScore() {
         if (getCheckedValue("q" + i) === answers[i]) score += 1; // increment only
     return score;
 }
-// // alternate between views, either showing the formor results
-// $(document).ready(function() {
-//     $('form').show()
-//     $('.result').hide()
-//     $('form').submit(function(event) {
-//         event.preventDefault();
-//         $('form').hide();
-//         $('.result').show()
-//         returnScore();
-//     })
-// })
-// function returnScore() {
-//     // alert("Your score is " + getScore() + "/" + tot);
-//     document.getElementById('marks').innerHTML = "Your score is " + "<br>" + (getScore()/tot)*100 + "%";
-// }
+// alternate between views, either showing the formor results
+$(document).ready(function() {
+    $('form').show()
+    $('.result').hide()
+    $('form').submit(function(event) {
+        event.preventDefault();
+        $('form').hide();
+        $('.result').show()
+        returnScore();
+    })
+})
+function returnScore() {
+    // alert("Your score is " + getScore() + "/" + tot);
+    document.getElementById('marks').innerHTML = "Your score is " + "<br>" + (getScore()/tot)*100 + "%";
+}
