@@ -8,13 +8,13 @@ function getCheckedValue(radioName) {
     }
 }
 //
-// function getScore() {
-//     var score = 0;
-//     // debugger
-//     for (var i = 0; i < tot; i++)
-//         if (getCheckedValue("q" + i) === answers[i]) score += 1; // increment only
-//     return score;
-// }
+function getScore() {
+    var score = 0;
+    // debugger
+    for (var i = 0; i < tot; i++)
+        if (getCheckedValue("q" + i) === answers[i]) score += 1; // increment only
+    return score;
+}
 // // alternate between views, either showing the formor results
 // $(document).ready(function() {
 //     $('form').show()
