@@ -4,3 +4,16 @@
 .panel .panel-heading{
   background-color: #ff9933;
 }
+.question{
+  list-style-type: none;
+}
+ul{
+  list-style-type: none;
+}
+#marks{
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-family: cursive;
+}
